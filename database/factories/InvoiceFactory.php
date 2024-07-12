@@ -3,7 +3,6 @@
 namespace Soap\Eloquent\Invoices\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Soap\Eloquent\Invoices\Enums\InvoiceState;
 use Soap\Eloquent\Invoices\Enums\InvoiceType;
