@@ -17,8 +17,9 @@ class Invoice extends Model implements Attachable
         'type' => InvoiceType::Invoice,
         'state' => InvoiceState::Draft,
     ];
-    
+
     protected $guarded = [];
+
     protected $casts = [
         'type' => InvoiceType::class,
         'state_set_at' => 'datetime',
@@ -33,6 +34,7 @@ class Invoice extends Model implements Attachable
         'tax_amount' => MoneyCast::class.':currency',
         'total_amount' => MoneyCast::class.':currency',
     ];
+
     public static function booted()
     {
         static::creating(function (Invoice $invoice) {
@@ -79,7 +81,7 @@ class Invoice extends Model implements Attachable
         return $this->morphTo();
     }
 
-        /**
+    /**
      * Invoice can be attached with another one
      * A Quote or a Credit can have another Invoice as parent.
      * Ex: $invoice = $quote->parent and $quote = $invoice->quote
@@ -111,7 +113,7 @@ class Invoice extends Model implements Attachable
     {
         return $this->discounts;
     }
-    
+
     public function scopeInvoice(Builder $query): Builder
     {
         return $query->where('type', InvoiceType::INVOICE);
@@ -152,7 +154,7 @@ class Invoice extends Model implements Attachable
      */
     public function toMailAttachment(): Attachment
     {
-        /* 
+        /*
             return Attachment::fromData(fn () => $this->toPdfInvoice()->pdf()->output())
             ->as($this->toPdfInvoice()->getFilename())
             ->withMime('application/pdf');
