@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Soap\Eloquent\Invoice\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class InvoiceCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'eloquent-invoices';
 
     public $description = 'My command';
 
