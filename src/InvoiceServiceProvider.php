@@ -19,7 +19,10 @@ class InvoiceServiceProvider extends PackageServiceProvider
             ->name('eloquent-invoices')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_invoices_table')
+            ->hasMigrations([
+                'create_invoices_table',
+                'create_invoice_items_table'
+            ])
             ->hasCommand(InvoiceCommand::class);
     }
 }
