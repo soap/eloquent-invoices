@@ -1,6 +1,6 @@
 <?php
 
-namespace Finller\Invoice;
+namespace Soap\Eloquent\Invoices;
 
 use Brick\Math\RoundingMode;
 use Brick\Money\Money;
