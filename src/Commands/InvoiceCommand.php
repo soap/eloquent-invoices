@@ -1,6 +1,6 @@
 <?php
 
-namespace Soap\Eloquent\Invoice\Commands;
+namespace Soap\Eloquent\Invoices\Commands;
 
 use Illuminate\Console\Command;
 

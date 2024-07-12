@@ -1,6 +1,6 @@
 <?php
 
-namespace Soap\Invoice\Database\Factories;
+namespace Soap\Eloquent\Invoices\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

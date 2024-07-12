@@ -1,16 +1,16 @@
 <?php
 
-namespace Soap\Eloquent\Invoice\Facades;
+namespace Soap\Eloquent\Invoices\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Soap\Eloquent\Invoice\Invoice
+ * @see \Soap\Eloquent\Invoices\Models\Invoice
  */
 class Invoice extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return \Soap\Eloquent\Invoice\Invoice::class;
+        return \Soap\Eloquent\Invoices\Models\Invoice::class;
     }
 }

@@ -1,10 +1,10 @@
 <?php
 
-namespace Soap\Eloquent\Invoice\Tests;
+namespace Soap\Eloquent\Invoices\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Soap\Eloquent\Invoice\InvoiceServiceProvider;
+use Soap\Eloquent\Invoices\InvoiceServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Soap\\Eloquent\\Invoice\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'Soap\\Eloquent\\Invoices\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 

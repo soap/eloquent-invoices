@@ -1,5 +1,5 @@
 <?php
 
-use Soap\Eloquent\Invoice\Tests\TestCase;
+use Soap\Eloquent\Invoices\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

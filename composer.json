@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Soap\\Eloquent\\Invoice\\": "src/",
-            "Soap\\Eloquent\\Invoice\\Database\\Factories\\": "database/factories/"
+            "Soap\\Eloquent\\Invoices\\": "src/",
+            "Soap\\Eloquent\\Invoices\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Soap\\Eloquent\\Invoice\\Tests\\": "tests/",
+            "Soap\\Eloquent\\Invoices\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -73,10 +73,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Soap\\Eloquent\\Invoice\\InvoiceServiceProvider"
+                "Soap\\Eloquent\\Invoices\\InvoiceServiceProvider"
             ],
             "aliases": {
-                "Invoice": "Soap\\Eloquent\\Invoice\\Facades\\Invoice"
+                "Invoice": "Soap\\Eloquent\\Invoices\\Facades\\Invoice"
             }
         }
     },

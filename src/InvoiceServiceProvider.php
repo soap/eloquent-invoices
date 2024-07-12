@@ -1,8 +1,8 @@
 <?php
 
-namespace Soap\Eloquent\Invoice;
+namespace Soap\Eloquent\Invoices;
 
-use Soap\Eloquent\Invoice\Commands\InvoiceCommand;
+use Soap\Eloquent\Invoices\Commands\InvoiceCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
