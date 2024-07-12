@@ -2,9 +2,9 @@
 
 namespace Soap\Eloquent\Invoice;
 
+use Soap\Eloquent\Invoice\Commands\InvoiceCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Soap\Eloquent\Invoice\Commands\InvoiceCommand;
 
 class InvoiceServiceProvider extends PackageServiceProvider
 {
