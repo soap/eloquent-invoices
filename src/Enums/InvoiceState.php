@@ -14,7 +14,7 @@ enum InvoiceState: string
 
     public function trans()
     {
-        return match($this) {
+        return match ($this) {
             self::DRAFT => __('Draft'),
             self::SENT => __('Sent'),
             self::PENDING => __('Pending'),
